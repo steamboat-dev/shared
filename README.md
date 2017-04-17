@@ -1,2 +1,2 @@
-# shared-schema
-Mongoose schema used by the frontend and bot
+# Shared
+Resources used by the frontend and bot.
