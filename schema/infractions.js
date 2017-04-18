@@ -21,8 +21,7 @@ var InfractionSchema = new Schema({
     },
     time: {
         type: Date(),
-        required: false,
-        default: new Date()
+        required: true
     }
 });
 
