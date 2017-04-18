@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+const InfractionSchema = require("./infractions");
 
 var GuildSchema = new Schema({
     guildID: {
@@ -9,5 +10,11 @@ var GuildSchema = new Schema({
     modLog: {
         type: Number,
         required: false
+    },
+    infractions: {
+        type: [InfractionSchema],
+        required: true
     }
 });
+
+module.exports = mongoose.model('GuildConfig', GuildSchema);
