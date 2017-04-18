@@ -6,6 +6,10 @@ var SettingSchema = new Schema({
         type: Number,
         required: false
     },
+    muteRoleID: {
+        type: Number,
+        required: false
+    },
     filterInvites: {
         type: Boolean,
         required: false,
