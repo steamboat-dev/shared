@@ -19,6 +19,10 @@ var InfractionSchema = new Schema({
         required: false,
         default: "No reason given"
     },
+    expirTime: {
+        type: Date,
+        required: false
+    },
     time: {
         type: Date(),
         required: true
