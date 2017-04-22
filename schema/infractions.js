@@ -19,13 +19,17 @@ var InfractionSchema = new Schema({
         required: false,
         default: "No reason given"
     },
-    expirTime: {
+    expireTime: {
         type: Date,
         required: false
     },
     time: {
         type: Date(),
         required: true
+    },
+    active: {
+        type: Boolean,
+        default: true
     }
 });
 
